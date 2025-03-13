@@ -37,7 +37,7 @@ class ColorFragment : Fragment() {
                     ) {
                         parent?.run {
                             if (view != null) {
-                                view.setBackgroundColor(Color.parseColor(getItemAtPosition(position).toString()))
+                                this@ColorFragment.view?.setBackgroundColor(Color.parseColor(getItemAtPosition(position).toString()))
                             }
                         }
                     }
